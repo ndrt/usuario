@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:background="@drawable/adentro"
+        android:layout_gravity="center|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/label_a"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese nombre:"
+        android:textColor="#0d0c0c"
+        android:textSize="20dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_a"/>
+    <TextView
+        android:id="@+id/label_b"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombre"
+        android:text="ingrese clave: "
+        android:textSize="20dp"
+        android:textColor="#060606" />
+    <EditText
+        android:id="@+id/clave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_b"/>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clave"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1dip"
+
+        android:text="login"
+        android:onClick="login" />
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/login"
+        android:layout_alignTop="@id/login"
+
+        android:text="registrar"
+        android:onClick="registrar" />
+
+    <TextView
+        android:id="@+id/respuesta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registrar"
+        android:text="estado"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+
+
+</RelativeLayout>

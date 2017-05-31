@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ndt.empleos.registrarProfesionista"
+    android:background="@drawable/fondo">
+    <TextView
+        android:id="@+id/label_a1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese descripcion de empleo:"
+        android:textColor="#0d0c0c"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/mensajeEstudiante"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_a1"/>
+    <TextView
+        android:id="@+id/label_b1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mensajeEstudiante"
+        android:text="ingrese telefono"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+    <EditText
+        android:id="@+id/telefonoEstudiante"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_b1"/>
+    <TextView
+        android:id="@+id/label_c1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telefonoEstudiante"
+        android:text="ingrese correo"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+    <EditText
+        android:id="@+id/correoEstudiante"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_c1"/>
+    <TextView
+        android:id="@+id/label_d1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correoEstudiante"
+        android:text="ingrese direccion"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+    <EditText
+        android:id="@+id/direccionEstudiante"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_d1"/>
+    <Button
+        android:id="@+id/registrarEstudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/direccionEstudiante"
+        android:text="registrar"
+        />
+
+    <TextView
+        android:id="@+id/label_respuesta1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registrarEstudiante"
+        android:text="estado"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+</RelativeLayout>

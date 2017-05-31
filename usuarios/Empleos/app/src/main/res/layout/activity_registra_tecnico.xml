@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ndt.empleos.registrarProfesionista"
+    android:background="@drawable/fondo">
+    <TextView
+        android:id="@+id/label_a"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese descripcion de empleo:"
+        android:textColor="#0d0c0c"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/mensajeTecnico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_a"/>
+    <TextView
+        android:id="@+id/label_b"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mensajeTecnico"
+        android:text="ingrese telefono"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+    <EditText
+        android:id="@+id/telefonoTecnico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_b"/>
+    <TextView
+        android:id="@+id/label_c"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telefonoTecnico"
+        android:text="ingrese correo"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+    <EditText
+        android:id="@+id/correoTecnico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_c"/>
+    <TextView
+        android:id="@+id/label_d"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/correoTecnico"
+        android:text="ingrese direccion"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+    <EditText
+        android:id="@+id/direccionTecnico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label_d"/>
+    <Button
+        android:id="@+id/registrarTrabajoTecnico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/direccionTecnico"
+        android:text="registrar"
+        android:onClick="registraEmpleoTecnico" />
+
+    <Button
+        android:id="@+id/salirTecnico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salir"
+        android:layout_toRightOf="@id/registrarTrabajoTecnico"
+        android:layout_alignTop="@id/registrarTrabajoTecnico"
+        />
+    <TextView
+        android:id="@+id/label_respuestaTecnico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/salirTecnico"
+        android:text="estado"
+        android:textSize="20dp"
+        android:textColor="#080808" />
+</RelativeLayout>
